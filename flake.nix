@@ -31,7 +31,7 @@
         }:
         {
           devShells.default = pkgs.callPackage ./nix/shell.nix { inherit config; };
-          treefmt = import ./nix/treefmt.nix;
+          treefmt = import ./nix/treefmt.nix { inherit pkgs; };
         };
     };
 }

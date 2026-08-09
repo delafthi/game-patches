@@ -1,3 +1,4 @@
+{ pkgs }:
 {
   projectRootFile = "flake.nix";
   programs = {
@@ -9,5 +10,10 @@
     shfmt.enable = true;
     statix.enable = true;
     typos.enable = true;
+  };
+  settings.formatter.plutil = {
+    command = "${pkgs.re-plistbuddy}/bin/plutil";
+    options = [ "-lint" ];
+    includes = [ "*.plist" ];
   };
 }
