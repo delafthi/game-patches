@@ -1,0 +1,11 @@
+libYoYoGamepad.dylib is proprietary software of YoYo Games / Opera. It is
+not covered by an open-source license and no explicit redistribution
+permission exists.
+
+This copy was extracted unaltered from a GameMaker Studio 2 macOS export
+published on GitHub (the "puppy-park" project by KristinDolan,
+https://github.com/KristinDolan/puppy-park), code-signed 2024-07-08.
+
+It is bundled here only as a drop-in replacement for the older build of the
+same library already shipped with the game, for personal use. All rights
+remain with YoYo Games / Opera.
