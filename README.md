@@ -15,6 +15,8 @@ games/
         ├── apply.sh             script that applies the fix to a destination
         └── <files>              fix payload, used by apply.sh
 templates/                       README template for new games
+scripts/macos/                   shared platform scripts (e.g. update-sdl2.py,
+                                 the SDL2 updater used by several games)
 ```
 
 `<platform>` is `macos` or `linux`, chosen automatically by the current OS.
@@ -25,7 +27,7 @@ justfiles of their own.
 
 ## Requirements
 
-`just`, provided by the dev shell:
+`just` and `uv`, provided by the dev shell:
 
 ```console
 nix develop
